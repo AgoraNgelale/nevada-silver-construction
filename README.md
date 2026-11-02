@@ -1,0 +1,2 @@
+# Nevada Silver Construction
+Premium React + Tailwind redesign. Development: npm install && npm run dev. Production: npm run build. Deployment: GitHub Actions to GitHub Pages. Set repository Settings > Pages > Build and deployment > Source: GitHub Actions. Images are illustrative stock photos, not verified company projects. Quote form opens the visitor's email app.
