@@ -1,0 +1,30 @@
+name: Import original website photos
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+  pull-requests: write
+jobs:
+  import-photos:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install image importer dependencies
+        run: pip install requests beautifulsoup4 pillow
+      - name: Download, deduplicate and optimize original photos
+        run: python scripts/import_original_photos.py
+      - name: Open photo review pull request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "Import original Nevada Silver Construction photos"
+          branch: automated/original-site-photos
+          delete-branch: true
+          title: "Review imported original Nevada Silver photos"
+          body: |
+            Automatically downloaded and optimized publicly accessible images from the original company website.
+            Review public/images/original/manifest.csv and confirm the photos are licensed for reuse.
+            No existing site images are replaced until each photo is assigned to the correct section.
