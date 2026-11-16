@@ -113,3 +113,8 @@ main,section{min-width:0}
 .reviews h2{color:#f8f2e9;margin-bottom:12px}
 .reviews-embed{background:#303723;color:#f8f2e9;border-radius:14px;overflow:hidden;min-height:0}
 @media(max-width:650px){.reviews{padding:48px 0 52px}.reviews h2{margin-bottom:8px}}
+
+/* Harmonize the review-to-contact transition without touching the widget itself. */
+.reviews,.reviews-embed,.contact{background:#303723!important}
+.contact{background-image:none!important;border-top:1px solid rgba(246,233,221,.09)}
+.footer{background:#242a20!important;border-top:1px solid rgba(246,233,221,.06)}
