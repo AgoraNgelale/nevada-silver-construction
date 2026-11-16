@@ -105,3 +105,11 @@ main,section{min-width:0}
 .reviews h2{font:400 clamp(36px,4vw,58px)/1.1 'DM Serif Display',Georgia,serif;margin:12px 0 30px}
 .reviews-embed{min-height:100px;width:100%}
 @media(max-width:650px){.reviews{padding:48px 0 52px}.reviews h2{font-size:36px;margin-bottom:22px}}
+
+/* Trustmary supplies its own white heading and cards; give the embed a dark
+   contrasting canvas so its heading remains legible without altering the provider. */
+.reviews{background:#303723;color:#f8f2e9;padding:62px 0 70px}
+.reviews>.wrap>.section-label{color:#ff922d}
+.reviews h2{color:#f8f2e9;margin-bottom:12px}
+.reviews-embed{background:#303723;color:#f8f2e9;border-radius:14px;overflow:hidden;min-height:0}
+@media(max-width:650px){.reviews{padding:48px 0 52px}.reviews h2{margin-bottom:8px}}
