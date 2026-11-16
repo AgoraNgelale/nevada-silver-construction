@@ -35,3 +35,31 @@ main,section{min-width:0}
 .footer .logo{width:110px}
 @media(max-width:980px){.logo{width:96px}.logo img{max-height:84px}}
 @media(max-width:650px){.logo{width:80px}.logo img{max-height:70px}.footer .logo{width:86px}}
+
+/* Approved brand concept — transparent-feeling original mark on charcoal/olive. */
+.header{top:0;width:100%;max-width:none;padding:10px max(4.5vw,calc((100vw - 1500px)/2));background:linear-gradient(90deg,rgba(28,31,24,.91),rgba(35,35,32,.69));gap:26px;min-height:96px}
+.header .logo{width:236px;align-self:center}
+.logo{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0;text-shadow:none}
+.logo img{display:block;width:100%;height:70px;max-height:none;object-fit:contain;mix-blend-mode:screen;filter:brightness(1.4) sepia(.13)}
+.logo-accent{display:block!important;font-size:12px!important;line-height:1!important;letter-spacing:.22em!important;color:#f78b16!important;font-weight:800!important;white-space:nowrap}
+.header .logo-accent{margin-top:-3px}
+.footer .logo{width:245px;transform:none}
+.footer .logo img{height:78px;max-height:none}
+.footer .logo-accent{margin-top:-2px}
+.hero{height: min(790px,82vw);min-height:650px}
+.hero-gradient{background:linear-gradient(90deg,rgba(19,23,18,.84) 0%,rgba(22,23,20,.56) 42%,rgba(18,18,16,.04) 87%),linear-gradient(0deg,rgba(16,22,14,.70),transparent 31%)}
+.hero-copy{margin-top:38px}
+.hero-bottom{bottom:52px}
+.contact{background:linear-gradient(105deg,#303723,#3b412c 55%,#343b28);padding:55px 0 62px}
+.contact-layout{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr) minmax(280px,.9fr);gap:36px;align-items:center}
+.contact h2{font-size:clamp(33px,3.15vw,52px);line-height:1.07;margin:10px 0 0}
+.contact h2 em{color:#fa8d25;white-space:normal}
+.contact-description{font-size:15px!important;line-height:1.7!important;margin:25px 0 0!important}
+.contact-actions{width:100%;gap:10px}
+.contact-actions a{min-height:54px;padding:13px 18px;border-radius:9px;font-size:14px;white-space:nowrap}
+.contact-actions a svg{width:22px;height:22px;flex:none}
+.contact-actions a svg:last-child:not(:first-child){margin-left:auto}
+.footer{background:#22271c;min-height:145px;padding-top:25px;padding-bottom:25px}
+@media(max-width:1100px){.header .logo{width:160px}.header{gap:14px}.nav{gap:18px;font-size:14px}.header-cta .estimate{padding:12px;font-size:12px}.contact-layout{grid-template-columns:1fr 1fr;gap:25px}.contact-actions{grid-column:1/-1;grid-row:2;display:flex}.contact-actions a{flex:1}.contact h2{font-size:clamp(32px,4vw,48px)}}
+@media(max-width:980px){.header{padding:9px 4.5vw;min-height:85px}.header .logo{width:155px}.logo img{height:62px}.nav{top:85px}.contact-layout{grid-template-columns:1fr 1fr}.contact-description{margin:0!important}}
+@media(max-width:650px){.header{min-height:75px;padding:7px 18px}.header .logo{width:122px}.logo img{height:49px}.logo-accent{font-size:9px!important}.nav{top:75px}.hero{min-height:700px}.hero-copy{margin-top:50px}.contact{padding:50px 0}.contact-layout{display:grid;grid-template-columns:1fr;gap:18px}.contact h2{font-size:clamp(35px,9vw,49px)}.contact-description{margin:0!important}.contact-actions{grid-column:1;grid-row:auto;display:grid;gap:12px}.contact-actions a{white-space:normal}.footer .logo{width:170px}.footer .logo img{height:63px}.footer{min-height:135px}}
