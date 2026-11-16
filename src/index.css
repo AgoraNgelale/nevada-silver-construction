@@ -99,3 +99,9 @@ main,section{min-width:0}
  -webkit-mask-position:center center;mask-position:center center;
  clip-path:inset(87% 23% 0 23%);
  pointer-events:none}
+
+/* Customer reviews: keep the existing site's palette and spacing. */
+.reviews{background:#f6e9dd;color:#261916;padding:72px 0 76px}
+.reviews h2{font:400 clamp(36px,4vw,58px)/1.1 'DM Serif Display',Georgia,serif;margin:12px 0 30px}
+.reviews-embed{min-height:100px;width:100%}
+@media(max-width:650px){.reviews{padding:48px 0 52px}.reviews h2{font-size:36px;margin-bottom:22px}}
