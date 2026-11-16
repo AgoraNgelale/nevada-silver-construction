@@ -63,3 +63,25 @@ main,section{min-width:0}
 @media(max-width:1100px){.header .logo{width:160px}.header{gap:14px}.nav{gap:18px;font-size:14px}.header-cta .estimate{padding:12px;font-size:12px}.contact-layout{grid-template-columns:1fr 1fr;gap:25px}.contact-actions{grid-column:1/-1;grid-row:2;display:flex}.contact-actions a{flex:1}.contact h2{font-size:clamp(32px,4vw,48px)}}
 @media(max-width:980px){.header{padding:9px 4.5vw;min-height:85px}.header .logo{width:155px}.logo img{height:62px}.nav{top:85px}.contact-layout{grid-template-columns:1fr 1fr}.contact-description{margin:0!important}}
 @media(max-width:650px){.header{min-height:75px;padding:7px 18px}.header .logo{width:122px}.logo img{height:49px}.logo-accent{font-size:9px!important}.nav{top:75px}.hero{min-height:700px}.hero-copy{margin-top:50px}.contact{padding:50px 0}.contact-layout{display:grid;grid-template-columns:1fr;gap:18px}.contact h2{font-size:clamp(35px,9vw,49px)}.contact-description{margin:0!important}.contact-actions{grid-column:1;grid-row:auto;display:grid;gap:12px}.contact-actions a{white-space:normal}.footer .logo{width:170px}.footer .logo img{height:63px}.footer{min-height:135px}}
+
+/* Mockup fidelity correction: crop the original square logo into a transparent ivory mark. */
+.logo{width:240px!important;height:82px;display:flex;align-items:center;justify-content:center;overflow:hidden;flex-shrink:0}
+.brand-mark{display:block;width:240px;height:82px;background:#f3eee0;-webkit-mask-image:var(--brand-mark);mask-image:var(--brand-mark);-webkit-mask-mode:luminance;mask-mode:luminance;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:240px 240px;mask-size:240px 240px;-webkit-mask-position:center center;mask-position:center center}
+.header{height:96px;min-height:96px;padding-top:0;padding-bottom:0;background:linear-gradient(90deg,rgba(25,29,23,.89),rgba(40,40,36,.52));align-items:center}
+.header .logo{width:240px!important}
+.footer .logo{width:240px!important;height:90px}
+.footer .brand-mark{width:240px;height:90px;-webkit-mask-size:240px 240px;mask-size:240px 240px}
+.hero{height:550px!important;min-height:550px!important}
+.hero-inner{align-items:center}
+.hero-copy{margin-top:45px;max-width:610px}
+.hero h1{font-size:clamp(48px,4.15vw,70px);margin-bottom:15px}
+.hero h1 em{font-size:1.02em}
+.hero-copy>p{max-width:520px;font-size:16px;margin-bottom:20px}
+.hero-bottom{bottom:36px}
+.hero-gradient{background:linear-gradient(90deg,rgba(18,23,17,.87),rgba(24,25,21,.48) 46%,transparent 88%),linear-gradient(0deg,rgba(18,24,15,.67),transparent 28%)}
+.contact{padding-top:46px;padding-bottom:47px}
+.contact h2{font-size:clamp(32px,3vw,48px)}
+.footer{min-height:160px}
+@media(max-width:1100px){.header .logo{width:180px!important}.logo{width:180px!important;height:75px}.brand-mark{width:180px;height:75px;-webkit-mask-size:180px 180px;mask-size:180px 180px}.hero{height:630px!important;min-height:630px!important}.hero h1{font-size:clamp(45px,5vw,65px)}}
+@media(max-width:980px){.header{height:82px;min-height:82px}.header .logo{width:170px!important}.logo{width:170px!important;height:70px}.brand-mark{width:170px;height:70px;-webkit-mask-size:170px 170px;mask-size:170px 170px}.nav{top:82px}.hero{height:700px!important;min-height:700px!important}}
+@media(max-width:650px){.header{height:72px;min-height:72px}.header .logo{width:125px!important}.logo{width:125px!important;height:56px}.brand-mark{width:125px;height:56px;-webkit-mask-size:125px 125px;mask-size:125px 125px}.nav{top:72px}.hero{height:750px!important;min-height:750px!important}.hero h1{font-size:clamp(42px,12vw,53px)}.hero-copy{margin-top:40px}.hero-bottom{bottom:54px}.footer .logo{width:180px!important;height:80px}.footer .brand-mark{width:180px;height:80px;-webkit-mask-size:180px 180px;mask-size:180px 180px}}
