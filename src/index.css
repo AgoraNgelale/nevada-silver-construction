@@ -85,3 +85,6 @@ main,section{min-width:0}
 @media(max-width:1100px){.header .logo{width:180px!important}.logo{width:180px!important;height:75px}.brand-mark{width:180px;height:75px;-webkit-mask-size:180px 180px;mask-size:180px 180px}}
 @media(max-width:980px){.header{height:82px;min-height:82px}.header .logo{width:170px!important}.logo{width:170px!important;height:70px}.brand-mark{width:170px;height:70px;-webkit-mask-size:170px 170px;mask-size:170px 170px}.nav{top:82px}}
 @media(max-width:650px){.header{height:72px;min-height:72px}.header .logo{width:125px!important}.logo{width:125px!important;height:56px}.brand-mark{width:125px;height:56px;-webkit-mask-size:125px 125px;mask-size:125px 125px}.nav{top:72px}.footer .logo{width:180px!important;height:80px}.footer .brand-mark{width:180px;height:80px;-webkit-mask-size:180px 180px;mask-size:180px 180px}}
+
+/* Accent only the bottom star row of the existing logo; no layout changes. */
+.brand-mark{background:linear-gradient(to bottom,#f3eee0 0%,#f3eee0 78%,#ff922d 82%,#ff922d 100%)}
