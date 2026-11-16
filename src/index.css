@@ -28,3 +28,10 @@ main,section{min-width:0}
 
 /* Verified service descriptions: keep compact card composition with six items */
 .service-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.service-card{display:flex;flex-direction:column}.service-image{height:clamp(130px,15vw,205px)}.service-info{flex-shrink:0}.service-description{font-size:13px;line-height:1.55;color:#63584f;margin:0;padding:5px 14px 17px;flex:1}.service-info strong{white-space:normal}.service-info{height:66px}@media(max-width:980px){.service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:480px){.service-grid{grid-template-columns:minmax(0,1fr)}.service-image{height:175px}}
+
+/* Original brand mark: preserve image proportions in header and footer. */
+.logo{display:flex;align-items:center;justify-content:center;width:118px;flex:none;text-decoration:none}
+.logo img{display:block;width:100%;height:auto;max-height:100px;object-fit:contain;filter:none}
+.footer .logo{width:110px}
+@media(max-width:980px){.logo{width:96px}.logo img{max-height:84px}}
+@media(max-width:650px){.logo{width:80px}.logo img{max-height:70px}.footer .logo{width:86px}}
