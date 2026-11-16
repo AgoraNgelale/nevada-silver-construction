@@ -87,3 +87,15 @@ main,section{min-width:0}
 @media(max-width:650px){.header{height:72px;min-height:72px}.header .logo{width:125px!important}.logo{width:125px!important;height:56px}.brand-mark{width:125px;height:56px;-webkit-mask-size:125px 125px;mask-size:125px 125px}.nav{top:72px}.footer .logo{width:180px!important;height:80px}.footer .brand-mark{width:180px;height:80px;-webkit-mask-size:180px 180px;mask-size:180px 180px}}
 
 /* Keep the original logo artwork uniformly ivory; avoid coloring LLC text. */
+
+/* Recolor only the five stars: an isolated, source-shaped orange mask.
+   All other logo pixels remain the original ivory. */
+.brand-mark{position:relative;background:#f3eee0}
+.brand-mark::after{content:"";position:absolute;inset:0;background:#ff922d;
+ -webkit-mask-image:var(--brand-mark);mask-image:var(--brand-mark);
+ -webkit-mask-mode:luminance;mask-mode:luminance;
+ -webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;
+ -webkit-mask-size:inherit;mask-size:inherit;
+ -webkit-mask-position:center center;mask-position:center center;
+ clip-path:inset(87% 23% 0 23%);
+ pointer-events:none}
